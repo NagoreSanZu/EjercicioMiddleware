@@ -15,10 +15,16 @@ use App\Http\Middleware\AfterLog;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/test', function () {
-    return "Esta es la ruta que se registrará en el log.";
-})->middleware([BeforeLog::class,AfterLog::class]);
+// Route::get('/test', function () {
+//     return "Esta es la ruta que se registrará en el log.";
+// })->middleware([BeforeLog::class,AfterLog::class]);
+
+
+
+Route::get('/', function () {
+    return view('home');
+});
